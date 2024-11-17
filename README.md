@@ -1,8 +1,10 @@
+# Ringbbuffer
+
 This project consists of two main parts.
 
 ### Thread-Safe Ring Buffer
 
-The ring buffer is designed so that multiple threads can access it at the same time. Critical sections are protected with locks. To avoid busy-waiting, I used signals and waits to manage the locking.  Additionally, pthread_cond_timedwait is used to enable timed waits.
+The ring buffer is designed so that multiple threads can access it at the same time. Critical sections are protected with locks. To avoid busy-waiting, I used signals and waits to manage the locking. Additionally, pthread_cond_timedwait is used to enable timed waits.
 
 ### Simple Network Daemon
 
